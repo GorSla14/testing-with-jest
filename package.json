@@ -19,5 +19,10 @@
   "homepage": "https://github.com/GorSla14/testing-with-jest#readme",
   "dependencies": {
     "underscore": "^1.13.8"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0",
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1"
   }
 }
