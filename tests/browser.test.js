@@ -59,6 +59,8 @@ test('Pop removes the top element from the stack', async () => {
         await alert.accept();
     let pop = await driver.findElement(By.id('pop'));
         await pop.click();
+    let popAlert = await driver.switchTo().alert();
+        await popAlert.accept();
     let peek = await driver.findElement(By.id('peek'));
         await peek.click();
     let result = await driver.findElement(By.id('top_of_stack')).getText();
