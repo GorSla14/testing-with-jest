@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+test('size returns the number of elements in the stack', () => {
+    while (stack.peek() !== undefined) {
+        stack.pop();
+    }
+    stack.push(10);
+    stack.push(20);
+    expect(stack.size()).toBe(2);
+});
